@@ -7,12 +7,15 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 import re
 import pandas as pd
 import numpy as np
+import json
 import pickle
 import os
 
 
-nltk.download('stopwords')
 nltk.download('punkt')
+
+with open("text_files/stop_words.txt", "r") as fp:
+     stop_words = json.load(fp)
 
 maxlen = 20   
 
@@ -30,7 +33,6 @@ def loadModels(model_path, encoder_path):
 
 def preprocess(par):
 	X = []
-	stop_words = set(nltk.corpus.stopwords.words("english"))
 	tokenizer = nltk.tokenize.RegexpTokenizer(r'\w+')
 	tmp = []
 	sentences = nltk.sent_tokenize(par)
