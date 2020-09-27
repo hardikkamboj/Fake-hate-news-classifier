@@ -24,15 +24,12 @@
         </div>
 
         <!-- Text Area -->
+
         <div class="ml-container">
             <form action="{{ url_for('predict') }}" method="POST">
-                <textarea class='message-box' name="message" rows="15" cols="75"
-                    placeholder="Enter Your Message Here..."></textarea><br />
-                <!-- <input type="submit" class="my-cta-button btn btn-outline-success" value="Predict"> </form> -->
-                <a href="result.html"> <button type="button"
-                        class="btn btn-outline-success btn-lg btn-block rounded-pill">Predict
-                    </button></a>
-
+                <textarea class='message-box' name="message" rows="15" cols="75" placeholder="Enter Your Message Here..."></textarea><br/>
+                <input type="submit" class="my-cta-button" value="Predict">
+            </form>
         </div>
 
         <!-- Footer -->
