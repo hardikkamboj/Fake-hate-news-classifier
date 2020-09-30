@@ -9,4 +9,4 @@ I collected the data from several kaggle datasets, you can see that from [here](
 I have saved the dataset that I used for this projet [here](https://www.kaggle.com/kambojharyana/fake-news-data), feel free to use it if you want.
 
 ## Model 
-I trained the model in kaggle kernel, check [this](https://www.kaggle.comfake-news-classifier)
+I trained the model in kaggle kernel, check [this](https://www.kaggle.com/kambojharyana/fake-news-classifier)
