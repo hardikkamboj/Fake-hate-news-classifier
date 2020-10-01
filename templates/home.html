@@ -12,6 +12,26 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    .msg-box {
+        padding-right: 65vh;
+        padding-left: 65vh;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    .footer-description {
+        padding-right: 65vh;
+        padding-left: 65vh;
+    }
+
+    .contact {
+        padding-right: 65vh;
+        padding-left: 65vh;
+    }
+</style>
 
 <body>
     <div class="overall">
@@ -26,8 +46,11 @@
         <!-- Text Area -->
         <div class="ml-container">
             <form action="{{ url_for('predict') }}" method="POST">
-                <textarea class='message-box' name="message" rows="15" cols="75"
-                    placeholder="Enter Your Message Here..."></textarea><br />
+                <div class="msg-box" justify-content-center>
+                    <textarea class='message-box' name="message" rows="15" cols="75"
+                        placeholder="Enter Your News Here...">
+                    </textarea><br>
+                </div>
                 <!-- <input type="submit" class="my-cta-button btn btn-outline-success" value="Predict"> </form> -->
                 <a href="result.html"> <button type="button"
                         class="btn btn-outline-success btn-lg btn-block rounded-pill">Predict
